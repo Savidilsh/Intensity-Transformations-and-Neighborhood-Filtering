@@ -49,4 +49,7 @@ for i, (img, title) in enumerate(display_images, 1):
     plt.title(title)
     plt.axis('off')
 
+#save plots
+plt.tight_layout()
+plt.savefig('C:/Users/Savindu Dilshan/Desktop/Github/Intensity-Transformations-and-Neighborhood-Filtering/a1images/foreground_equlized.png')
 plt.show()
