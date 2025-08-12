@@ -10,7 +10,7 @@ hsv_img = cv.cvtColor(img_orig, cv.COLOR_BGR2HSV)
 h, s, v = cv.split(hsv_img)
 
 # Apply the intensity transformation to saturation plane
-a = 0.3  # Adjust a for visually pleasing output (report this value)
+a = 0.3 
 sigma = 70
 transformation = lambda x: np.minimum(x + a * 128 * np.exp(-((x - 128) ** 2) / (2 * sigma ** 2)), 255)
 s_transformed = transformation(s).astype(np.uint8)
@@ -57,4 +57,7 @@ plt.title('Intensity Transformation')
 plt.xlabel('Input Saturation')
 plt.ylabel('Output Saturation')
 
+#save plots
+plt.tight_layout()
+plt.savefig('C:/Users/Savindu Dilshan/Desktop/Github/Intensity-Transformations-and-Neighborhood-Filtering/a1images/enhanced.png')
 plt.show()
