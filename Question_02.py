@@ -51,8 +51,9 @@ plt.title('Gray Matter Transformation')
 plt.xlabel('Input Intensity')
 plt.ylabel('Output Intensity')
 
-#save the transformed images
-cv.imwrite('C:/Users/Savindu Dilshan/Desktop/Github/Intensity-Transformations-and-Neighborhood-Filtering/a1images/brain_proton_density_slice_white.jpg', white_img)
-cv.imwrite('C:/Users/Savindu Dilshan/Desktop/Github/Intensity-Transformations-and-Neighborhood-Filtering/a1images/brain_proton_density_slice_gray.jpg', gray_img)
+#save the plots
+plt.savefig('C:/Users/Savindu Dilshan/Desktop/Github/Intensity-Transformations-and-Neighborhood-Filtering/a1images/white_and_gray_brain.png')
+
+
 plt.tight_layout()  
 plt.show()
